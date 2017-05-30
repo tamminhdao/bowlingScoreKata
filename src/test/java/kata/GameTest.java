@@ -46,17 +46,6 @@ public class GameTest {
     }
 
     @Test
-    public void canRollTwoSpares() {
-        g.roll(5);
-        g.roll(5);
-        g.roll(4);
-        g.roll(6);
-        g.roll(3);
-        rollMany(0, 15);
-        assertEquals(30, g.score());
-    }
-
-    @Test
     public void canRollOneStrike() {
         rollStrike();
         g.roll(3);
